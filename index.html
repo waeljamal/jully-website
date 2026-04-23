@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Afro Hair Ankara | Afrika Örgü Çankaya | Jully Hair</title>
+
+<meta name="description" content="Afro hair Ankara. Box braids, cornrows, boho braids ve wig installation hizmetleri. Çankaya Ankara'da profesyonel afro saç salonu. WhatsApp ile randevu alın.">
+
+<meta name="keywords" content="afro hair Ankara, afrika örgü Ankara, box braids Ankara, cornrows Ankara, wig installation Ankara">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0a0a0a;
+    color: white;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: black;
+    position: sticky;
+    top: 0;
+}
+
+nav h2 { color: gold; }
+
+nav button {
+    background: gold;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 { color: gold; font-size: 40px; }
+
+.btn {
+    background: gold;
+    color: black;
+    padding: 14px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* SERVICES */
+.services {
+    text-align: center;
+    padding: 60px;
+}
+
+.box {
+    border: 1px solid gold;
+    margin: 10px;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+/* GALLERY */
+.gallery {
+    text-align: center;
+    padding: 60px;
+}
+
+/* BOOKING */
+.booking {
+    text-align: center;
+    padding: 60px;
+}
+
+input, select {
+    padding: 12px;
+    margin: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+/* CONTACT */
+.contact {
+    text-align: center;
+    padding: 60px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>JULLY HAIR</h2>
+    <button onclick="toggleLang()">TR / EN</button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <h1 id="title">Afro Hair Ankara</h1>
+    <p id="subtitle">Luxury Braids • Cornrows • Wigs</p>
+    <a class="btn" href="https://wa.me/905396637406">Book on WhatsApp</a>
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+    <h2 id="servicesTitle">Services</h2>
+
+    <div class="box">Box Braids</div>
+    <div class="box">Cornrows</div>
+    <div class="box">Boho Braids</div>
+    <div class="box">Wig Installation</div>
+</section>
+
+<!-- SEO TEXT -->
+<section>
+<h2 style="text-align:center; color:gold;">Afro Hair Ankara Services</h2>
+<p style="text-align:center; max-width:600px; margin:auto;">
+Looking for afro hair in Ankara? We specialize in box braids, cornrows,
+boho braids and wig installation in Çankaya Ankara.
+</p>
+</section>
+
+<!-- INSTAGRAM -->
+<section class="gallery">
+    <h2>Instagram</h2>
+
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <div class="elfsight-app-YOUR-ID"></div>
+</section>
+
+<!-- BOOKING -->
+<section class="booking">
+    <h2 id="bookingTitle">Book Appointment</h2>
+
+    <form onsubmit="sendWhatsApp(); return false;">
+        <input type="text" id="name" placeholder="Your Name" required><br>
+        <input type="date" id="date" required><br>
+
+        <select id="service">
+            <option>Box Braids</option>
+            <option>Cornrows</option>
+            <option>Boho Braids</option>
+            <option>Wig Installation</option>
+        </select><br>
+
+        <button type="submit">Send Booking</button>
+    </form>
+
+    <p style="margin-top:15px; color:gold;">Limited spots this week — book now</p>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+    <h2>Contact</h2>
+    <p>📞 +90 539 663 74 06</p>
+    <p>📍 Çankaya / Ankara</p>
+
+    <iframe 
+        src="https://maps.google.com/maps?q=39.9208,32.8541&z=15&output=embed"
+        width="90%" height="300" style="border:0;">
+    </iframe>
+</section>
+
+<footer>
+    © 2026 Jully Hair Ankara
+</footer>
+
+<script>
+let isEnglish = true;
+
+function toggleLang() {
+    isEnglish = !isEnglish;
+
+    if (!isEnglish) {
+        document.getElementById("title").innerText = "Afro Saç Ankara";
+        document.getElementById("subtitle").innerText = "Lüks Örgü • Cornrows • Peruk";
+        document.getElementById("servicesTitle").innerText = "Hizmetler";
+        document.getElementById("bookingTitle").innerText = "Randevu Al";
+    } else {
+        document.getElementById("title").innerText = "Afro Hair Ankara";
+        document.getElementById("subtitle").innerText = "Luxury Braids • Cornrows • Wigs";
+        document.getElementById("servicesTitle").innerText = "Services";
+        document.getElementById("bookingTitle").innerText = "Book Appointment";
+    }
+}
+
+function sendWhatsApp() {
+    let name = document.getElementById("name").value;
+    let date = document.getElementById("date").value;
+    let service = document.getElementById("service").value;
+
+    let message = `Hello, my name is ${name}. I want ${service} on ${date}.`;
+
+    let url = "https://wa.me/905396637406?text=" + encodeURIComponent(message);
+    window.open(url, "_blank");
+}
+</script>
+
+</body>
+</html>

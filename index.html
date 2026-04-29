@@ -45,7 +45,11 @@ nav button {
     padding: 100px 20px;
 }
 
-.hero h1 { color: gold; font-size: 40px; }
+.hero h1 { 
+    color: gold; 
+    font-size: 40px; 
+    text-shadow: 0 0 10px gold;
+}
 
 .btn {
     background: gold;
@@ -54,6 +58,11 @@ nav button {
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    box-shadow: 0 0 15px gold;
 }
 
 /* SERVICES */
@@ -68,6 +77,12 @@ nav button {
     padding: 20px;
     display: inline-block;
     border-radius: 10px;
+    transition: 0.3s;
+}
+
+.box:hover {
+    background: gold;
+    color: black;
 }
 
 /* GALLERY */
@@ -95,6 +110,26 @@ input, select {
     padding: 60px;
 }
 
+/* SOCIAL BUTTONS */
+.social-btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.instagram {
+    background: linear-gradient(45deg, #feda75, #d62976, #962fbf);
+    color: white;
+}
+
+.map {
+    background: gold;
+    color: black;
+}
+
 /* FOOTER */
 footer {
     text-align: center;
@@ -115,7 +150,13 @@ footer {
 <section class="hero">
     <h1 id="title">Afro Hair Ankara</h1>
     <p id="subtitle">Luxury Braids • Cornrows • Wigs</p>
-    <a class="btn" href="https://wa.me/905396637406">Book on WhatsApp</a>
+
+    <a class="btn" href="https://wa.me/905396637406">Book on WhatsApp</a><br><br>
+
+    <!-- Instagram Button -->
+    <a class="social-btn instagram" href="https://www.instagram.com/jullyafrikastile" target="_blank">
+        Instagram
+    </a>
 </section>
 
 <!-- SERVICES -->
@@ -137,7 +178,7 @@ boho braids and wig installation in Çankaya Ankara.
 </p>
 </section>
 
-<!-- INSTAGRAM -->
+<!-- INSTAGRAM FEED -->
 <section class="gallery">
     <h2>Instagram</h2>
 
@@ -172,10 +213,10 @@ boho braids and wig installation in Çankaya Ankara.
     <p>📞 +90 539 663 74 06</p>
     <p>📍 Çankaya / Ankara</p>
 
-    <iframe 
-        src="https://maps.google.com/maps?q=39.9208,32.8541&z=15&output=embed"
-        width="90%" height="300" style="border:0;">
-    </iframe>
+    <!-- MAP BUTTON -->
+    <a class="social-btn map" href="https://maps.app.goo.gl/JX6s7PpPMzp9cwHu8" target="_blank">
+        Open Location
+    </a>
 </section>
 
 <footer>

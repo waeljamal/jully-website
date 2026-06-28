@@ -1,258 +1,413 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Afro Hair Ankara | Afrika Örgü Çankaya | Jully Hair</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<meta name="description" content="Afro hair Ankara. Box braids, cornrows, boho braids ve wig installation hizmetleri. Çankaya Ankara'da profesyonel afro saç salonu. WhatsApp ile randevu alın.">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
-<meta name="keywords" content="afro hair Ankara, afrika örgü Ankara, box braids Ankara, cornrows Ankara, wig installation Ankara">
+    <title>Afro Hair Ankara | Jully Afrika Style</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <meta name="description"
+        content="Professional African Braiding Salon in Ankara. Certified Braider Since 2012. Book your appointment today.">
 
-<style>
-body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: #0a0a0a;
-    color: white;
-}
+    <meta name="keywords"
+        content="Afro Hair Ankara, African Braids Ankara, Cornrows Ankara, Box Braids Ankara">
 
-/* NAV */
-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background: black;
-    position: sticky;
-    top: 0;
-}
+    <meta name="author"
+        content="Engr. Wael Jamal">
 
-nav h2 { color: gold; }
+    <link rel="icon" href="images/logo/favicon.png">
 
-nav button {
-    background: gold;
-    border: none;
-    padding: 8px 15px;
-    cursor: pointer;
-}
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
 
-/* HERO */
-.hero {
-    text-align: center;
-    padding: 100px 20px;
-}
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
-.hero h1 { 
-    color: gold; 
-    font-size: 40px; 
-    text-shadow: 0 0 10px gold;
-}
+    <script
+        src="https://kit.fontawesome.com/your-kit.js"
+        crossorigin="anonymous"></script>
 
-.btn {
-    background: gold;
-    color: black;
-    padding: 14px 30px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    box-shadow: 0 0 15px gold;
-}
-
-/* SERVICES */
-.services {
-    text-align: center;
-    padding: 60px;
-}
-
-.box {
-    border: 1px solid gold;
-    margin: 10px;
-    padding: 20px;
-    display: inline-block;
-    border-radius: 10px;
-    transition: 0.3s;
-}
-
-.box:hover {
-    background: gold;
-    color: black;
-}
-
-/* GALLERY */
-.gallery {
-    text-align: center;
-    padding: 60px;
-}
-
-/* BOOKING */
-.booking {
-    text-align: center;
-    padding: 60px;
-}
-
-input, select {
-    padding: 12px;
-    margin: 10px;
-    border-radius: 8px;
-    border: none;
-}
-
-/* CONTACT */
-.contact {
-    text-align: center;
-    padding: 60px;
-}
-
-/* SOCIAL BUTTONS */
-.social-btn {
-    display: inline-block;
-    margin: 10px;
-    padding: 12px 20px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.instagram {
-    background: linear-gradient(45deg, #feda75, #d62976, #962fbf);
-    color: white;
-}
-
-.map {
-    background: gold;
-    color: black;
-}
-
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: black;
-}
-</style>
 </head>
 
 <body>
 
+<!-- ================= PRELOADER ================= -->
+
+<div id="preloader">
+
+    <div class="loader"></div>
+
+</div>
+
+<!-- ================= FLOATING BUTTONS ================= -->
+
+<a href="https://wa.me/905396637406"
+class="whatsapp-button"
+target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<a href="#booking"
+class="booking-button">
+
+Book Now
+
+</a>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
 <nav>
-    <h2>JULLY HAIR</h2>
-    <button onclick="toggleLang()">TR / EN</button>
+
+<div class="logo">
+
+<img src="images/logo/logo.png">
+
+</div>
+
+<ul id="menu">
+
+<li><a href="#home">Ana Sayfa</a></li>
+
+<li><a href="#about">Hakkımızda</a></li>
+
+<li><a href="#gallery">Galeri</a></li>
+
+<li><a href="#services">Hizmetler</a></li>
+
+<li><a href="#booking">Randevu Al</a></li>
+
+<li><a href="#contact">İletişim</a></li>
+
+</ul>
+
+<div class="language">
+
+<button id="tr-btn">TR</button>
+
+<button id="en-btn">EN</button>
+
+</div>
+
+<div class="mobile-menu">
+
+☰
+
+</div>
+
 </nav>
 
-<!-- HERO -->
-<section class="hero">
-    <h1 id="title">Afro Hair Ankara</h1>
-    <p id="subtitle">Luxury Braids • Cornrows • Wigs</p>
+</header>
 
-    <a class="btn" href="https://wa.me/905396637406">Book on WhatsApp</a><br><br>
+<!-- ================= HERO ================= -->
 
-    <!-- Instagram Button -->
-    <a class="social-btn instagram" href="https://www.instagram.com/jullyafrikastile" target="_blank">
-        Instagram
-    </a>
-</section>
+<section id="home">
 
-<!-- SERVICES -->
-<section class="services">
-    <h2 id="servicesTitle">Services</h2>
+<video autoplay muted loop playsinline>
 
-    <div class="box">Box Braids</div>
-    <div class="box">Cornrows</div>
-    <div class="box">Boho Braids</div>
-    <div class="box">Wig Installation</div>
-</section>
+<source
+src="videos/hero.mp4"
+type="video/mp4">
 
-<!-- SEO TEXT -->
-<section>
-<h2 style="text-align:center; color:gold;">Afro Hair Ankara Services</h2>
-<p style="text-align:center; max-width:600px; margin:auto;">
-Looking for afro hair in Ankara? We specialize in box braids, cornrows,
-boho braids and wig installation in Çankaya Ankara.
+</video>
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h1>
+
+Jully Afrika Style
+
+</h1>
+
+<h2>
+
+Professional African Braiding Salon
+
+</h2>
+
+<p>
+
+Certified Since 2012
+
+14+ Years Experience
+
 </p>
+
+<a href="#booking"
+class="hero-btn">
+
+Book Appointment
+
+</a>
+
+</div>
+
 </section>
 
-<!-- INSTAGRAM FEED -->
-<section class="gallery">
-    <h2>Instagram</h2>
+<!-- ================= ABOUT ================= -->
 
-    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-    <div class="elfsight-app-YOUR-ID"></div>
+<section id="about">
+
+<div class="container">
+
+<h2>Hakkımızda</h2>
+
+<p>
+
+Professional African braider from Togo.
+
+Certified since 2012.
+
+More than 14 years experience.
+
+Providing premium African braiding services in Ankara.
+
+</p>
+
+</div>
+
 </section>
 
-<!-- BOOKING -->
-<section class="booking">
-    <h2 id="bookingTitle">Book Appointment</h2>
+<!-- ================= GALLERY ================= -->
 
-    <form onsubmit="sendWhatsApp(); return false;">
-        <input type="text" id="name" placeholder="Your Name" required><br>
-        <input type="date" id="date" required><br>
+<section id="gallery">
 
-        <select id="service">
-            <option>Box Braids</option>
-            <option>Cornrows</option>
-            <option>Boho Braids</option>
-            <option>Wig Installation</option>
-        </select><br>
+<h2>Galeri</h2>
 
-        <button type="submit">Send Booking</button>
-    </form>
+<div class="gallery-grid">
 
-    <p style="margin-top:15px; color:gold;">Limited spots this week — book now</p>
+<!-- Images -->
+
+<!-- Videos -->
+
+</div>
+
 </section>
 
-<!-- CONTACT -->
-<section class="contact">
-    <h2>Contact</h2>
-    <p>📞 +90 539 663 74 06</p>
-    <p>📍 Çankaya / Ankara</p>
+<!-- ================= SERVICES ================= -->
 
-    <!-- MAP BUTTON -->
-    <a class="social-btn map" href="https://maps.app.goo.gl/JX6s7PpPMzp9cwHu8" target="_blank">
-        Open Location
-    </a>
+<section id="services">
+
+<h2>Hizmetler</h2>
+
+<div class="service-container">
+
+<!-- Cornrows -->
+
+<!-- Afro Braids -->
+
+<!-- Mini Box Braids -->
+
+</div>
+
 </section>
 
-<footer>
-    © 2026 Jully Hair Ankara
+<!-- ================= BOOKING ================= -->
+
+<section id="booking">
+
+<h2>Randevu Al</h2>
+
+<form id="bookingForm">
+
+<input
+type="text"
+placeholder="Ad">
+
+<input
+type="text"
+placeholder="Soyad">
+
+<input
+type="tel"
+placeholder="Telefon">
+
+<input
+type="email"
+placeholder="E-posta">
+
+<select>
+
+<option>Hizmet Seçiniz</option>
+
+</select>
+
+<select>
+
+<option>Uzunluk</option>
+
+</select>
+
+<input
+type="date">
+
+<input
+type="time">
+
+<textarea
+placeholder="Not"></textarea>
+
+<div class="payment">
+
+<h3>
+
+Ödeme Bilgileri
+
+</h3>
+
+<p>
+
+Sadece IBAN ile ödeme kabul edilmektedir.
+
+</p>
+
+<h4>
+
+Tuğrahan Şibil
+
+</h4>
+
+<h4>
+
+TR46 0011 1000 0000 0152 0406 81
+
+</h4>
+
+<label>
+
+<input type="checkbox">
+
+Ödemeyi yaptığımı onaylıyorum.
+
+</label>
+
+</div>
+
+<button>
+
+Randevu Oluştur
+
+</button>
+
+</form>
+
+</section>
+
+<!-- ================= GOOGLE REVIEWS ================= -->
+
+<section id="reviews">
+
+<h2>
+
+Müşteri Yorumları
+
+</h2>
+
+<div id="googleReviews">
+
+</div>
+
+</section>
+
+<!-- ================= MAP ================= -->
+
+<section id="map">
+
+<iframe>
+
+</iframe>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer id="contact">
+
+<div class="footer-box">
+
+<div>
+
+<h3>İletişim</h3>
+
+<p>
+
++90 539 663 74 06
+
+</p>
+
+<p>
+
+Korkutreis
+
+Necatibey Cd. No:15 D:16
+
+06420
+
+Çankaya / Ankara
+
+</p>
+
+</div>
+
+<div>
+
+<h3>
+
+Website Designer & Programmer
+
+</h3>
+
+<p>
+
+Engr. Wael Jamal
+
+</p>
+
+</div>
+
+<div>
+
+<h3>
+
+Çalışma Saatleri
+
+</h3>
+
+<p>
+
+Pazartesi - Pazar
+
+</p>
+
+<p>
+
+09:00 - 23:00
+
+</p>
+
+</div>
+
+</div>
+
 </footer>
 
-<script>
-let isEnglish = true;
-
-function toggleLang() {
-    isEnglish = !isEnglish;
-
-    if (!isEnglish) {
-        document.getElementById("title").innerText = "Afro Saç Ankara";
-        document.getElementById("subtitle").innerText = "Lüks Örgü • Cornrows • Peruk";
-        document.getElementById("servicesTitle").innerText = "Hizmetler";
-        document.getElementById("bookingTitle").innerText = "Randevu Al";
-    } else {
-        document.getElementById("title").innerText = "Afro Hair Ankara";
-        document.getElementById("subtitle").innerText = "Luxury Braids • Cornrows • Wigs";
-        document.getElementById("servicesTitle").innerText = "Services";
-        document.getElementById("bookingTitle").innerText = "Book Appointment";
-    }
-}
-
-function sendWhatsApp() {
-    let name = document.getElementById("name").value;
-    let date = document.getElementById("date").value;
-    let service = document.getElementById("service").value;
-
-    let message = `Hello, my name is ${name}. I want ${service} on ${date}.`;
-
-    let url = "https://wa.me/905396637406?text=" + encodeURIComponent(message);
-    window.open(url, "_blank");
-}
-</script>
+<script src="js/script.js"></script>
+<script src="js/language.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/booking.js"></script>
 
 </body>
+
 </html>

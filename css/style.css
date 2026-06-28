@@ -977,3 +977,42 @@ width:130px;
 .hero-logo-reveal img {
   display: none !important;
 }
+.service-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(212, 175, 55, 0.16),
+    transparent 45%
+  );
+  opacity: 0;
+  transition: 0.35s ease;
+}
+
+.service-card:hover::before {
+  opacity: 1;
+}
+
+.service-card h3,
+.service-card ul,
+.service-card .card-btn {
+  position: relative;
+  z-index: 2;
+}
+
+.service-card::after {
+  content: "JULLY";
+  position: absolute;
+  right: -18px;
+  bottom: -22px;
+  font-family: "Cinzel", serif;
+  font-size: 52px;
+  color: rgba(212, 175, 55, 0.06);
+  letter-spacing: 6px;
+}

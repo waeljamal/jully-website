@@ -1,0 +1,265 @@
+/* CINEMATIC LOADER */
+
+.loader-logo {
+  animation: logoReveal 1.6s ease forwards;
+}
+
+.loader-line {
+  animation: lineReveal 1.6s ease forwards;
+}
+
+@keyframes logoReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(25px) scale(0.94);
+    letter-spacing: 18px;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    letter-spacing: 5px;
+  }
+}
+
+@keyframes lineReveal {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+
+  100% {
+    width: 160px;
+    opacity: 1;
+  }
+}
+
+/* HERO CINEMATIC */
+
+.hero-video {
+  animation: heroZoom 18s ease-in-out infinite alternate;
+}
+
+@keyframes heroZoom {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.08);
+  }
+}
+
+.hero-content .eyebrow,
+.hero-content h1,
+.hero-content h2,
+.hero-content .hero-text,
+.hero-buttons {
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
+}
+
+.hero-content .eyebrow {
+  animation-delay: 0.4s;
+}
+
+.hero-content h1 {
+  animation-delay: 0.7s;
+}
+
+.hero-content h2 {
+  animation-delay: 1s;
+}
+
+.hero-content .hero-text {
+  animation-delay: 1.25s;
+}
+
+.hero-buttons {
+  animation-delay: 1.5s;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* GOLD PARTICLES BACKGROUND */
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: -50%;
+  background-image: radial-gradient(circle, rgba(212, 175, 55, 0.35) 1px, transparent 1.8px);
+  background-size: 80px 80px;
+  opacity: 0.08;
+  animation: goldDust 38s linear infinite;
+  z-index: 1;
+  pointer-events: none;
+}
+
+@keyframes goldDust {
+  from {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  to {
+    transform: translateY(-420px) rotate(360deg);
+  }
+}
+
+/* SCROLL INDICATOR */
+
+.scroll-indicator {
+  position: absolute;
+  left: 50%;
+  bottom: 34px;
+  transform: translateX(-50%);
+  width: 28px;
+  height: 52px;
+  border: 2px solid rgba(255, 255, 255, 0.75);
+  border-radius: 40px;
+  z-index: 5;
+}
+
+.scroll-indicator::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 9px;
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  animation: wheel 1.8s infinite;
+}
+
+@keyframes wheel {
+  0% {
+    opacity: 1;
+    top: 9px;
+  }
+
+  100% {
+    opacity: 0;
+    top: 30px;
+  }
+}
+
+/* BUTTON SHINE */
+
+.btn-gold,
+.card-btn,
+.float-book {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-gold::before,
+.card-btn::before,
+.float-book::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 70px;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.55), transparent);
+  transform: skewX(-25deg);
+}
+
+.btn-gold:hover::before,
+.card-btn:hover::before,
+.float-book:hover::before {
+  animation: shine 0.8s ease;
+}
+
+@keyframes shine {
+  to {
+    left: 160%;
+  }
+}
+
+/* FLOATING BUTTONS */
+
+.float-whatsapp,
+.float-book {
+  animation: floating 3s ease-in-out infinite;
+}
+
+.float-book {
+  animation-delay: 0.6s;
+}
+
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-7px);
+  }
+}
+
+/* CARD REVEAL */
+
+.service-card,
+.gallery-item,
+.about-card,
+.stat-box {
+  opacity: 0;
+  transform: translateY(45px);
+  transition: 0.8s ease;
+}
+
+.service-card.show,
+.gallery-item.show,
+.about-card.show,
+.stat-box.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* PREMIUM HOVERS */
+
+.service-card:hover,
+.about-card:hover,
+.stat-box:hover {
+  box-shadow:
+    0 30px 90px rgba(0, 0, 0, 0.6),
+    0 0 35px rgba(212, 175, 55, 0.12);
+}
+
+.gallery-item:hover {
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.55),
+    0 0 28px rgba(212, 175, 55, 0.18);
+}
+
+/* WHATSAPP PULSE */
+
+.float-whatsapp.pulse {
+  animation: whatsappPulse 0.9s ease;
+}
+
+@keyframes whatsappPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+
+  70% {
+    box-shadow: 0 0 0 18px rgba(37, 211, 102, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}

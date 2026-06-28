@@ -369,3 +369,134 @@
 .nav-menu a.active {
   color: #d4af37;
 }
+/* ======================================
+PREMIUM HERO ANIMATIONS
+====================================== */
+
+@keyframes logoFloat{
+
+0%,100%{
+
+transform:translateX(-50%) translateY(0);
+
+}
+
+50%{
+
+transform:translateX(-50%) translateY(-12px);
+
+}
+
+}
+
+@keyframes goldPulse{
+
+0%,100%{
+
+transform:translate(-50%,-50%) scale(1);
+
+opacity:.55;
+
+}
+
+50%{
+
+transform:translate(-50%,-50%) scale(1.12);
+
+opacity:.95;
+
+}
+
+}
+
+.hero-logo-reveal{
+
+opacity:0;
+
+animation:
+
+fadeLogo 2s forwards,
+
+logoFloat 5s ease-in-out infinite 2s;
+
+}
+
+@keyframes fadeLogo{
+
+from{
+
+opacity:0;
+
+transform:translateX(-50%) scale(.6);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateX(-50%) scale(1);
+
+}
+
+}
+
+.premium-hero h1{
+
+animation:heroText 1.5s ease forwards;
+
+animation-delay:1.4s;
+
+opacity:0;
+
+}
+
+.premium-hero h2{
+
+animation:heroText 1.5s ease forwards;
+
+animation-delay:1.8s;
+
+opacity:0;
+
+}
+
+.hero-text{
+
+animation:heroText 1.5s ease forwards;
+
+animation-delay:2.2s;
+
+opacity:0;
+
+}
+
+.hero-buttons{
+
+animation:heroText 1.5s ease forwards;
+
+animation-delay:2.6s;
+
+opacity:0;
+
+}
+
+@keyframes heroText{
+
+from{
+
+opacity:0;
+
+transform:translateY(50px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}

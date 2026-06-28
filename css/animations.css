@@ -409,17 +409,6 @@ opacity:.95;
 
 }
 
-.hero-logo-reveal{
-
-opacity:0;
-
-animation:
-
-fadeLogo 2s forwards,
-
-logoFloat 5s ease-in-out infinite 2s;
-
-}
 
 @keyframes fadeLogo{
 

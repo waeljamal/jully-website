@@ -973,3 +973,7 @@ width:130px;
 }.hero-logo-reveal {
   display: none;
 }
+.hero-logo-reveal,
+.hero-logo-reveal img {
+  display: none !important;
+}

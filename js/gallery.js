@@ -1,12 +1,12 @@
 const galleryItems = [
-  { type: "image", src: "images/gallery/photo1.jpg", alt: "Jully Afrika Style photo 1" },
-  { type: "image", src: "images/gallery/photo2.jpg", alt: "Jully Afrika Style photo 2" },
-  { type: "image", src: "images/gallery/photo3.jpg", alt: "Jully Afrika Style photo 3" },
-  { type: "image", src: "images/gallery/photo4.jpg", alt: "Jully Afrika Style photo 4" },
-  { type: "image", src: "images/gallery/photo5.jpg", alt: "Jully Afrika Style photo 5" },
-  { type: "image", src: "images/gallery/photo6.jpg", alt: "Jully Afrika Style photo 6" },
-  { type: "image", src: "images/gallery/photo7.jpg", alt: "Jully Afrika Style photo 7" },
-  { type: "image", src: "images/gallery/photo8.jpg", alt: "Jully Afrika Style photo 8" }
+  { type: "image", src: "images/gallery/photo1.jpg", alt: "Photo 1" },
+  { type: "image", src: "images/gallery/photo2.jpg", alt: "Photo 2" },
+  { type: "image", src: "images/gallery/photo3.jpg", alt: "Photo 3" },
+  { type: "image", src: "images/gallery/photo4.jpg", alt: "Photo 4" },
+  { type: "image", src: "images/gallery/photo5.jpg", alt: "Photo 5" },
+  { type: "image", src: "images/gallery/photo6.jpg", alt: "Photo 6" },
+  { type: "image", src: "images/gallery/photo7.jpg", alt: "Photo 7" },
+  { type: "image", src: "images/gallery/photo8.jpg", alt: "Photo 8" }
 ];
 
 document.addEventListener("DOMContentLoaded", () => {

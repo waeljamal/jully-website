@@ -1128,3 +1128,44 @@ width:130px;
     transform: scale(1);
   }
 }
+.gallery-section .container {
+  position: relative;
+}
+
+.gallery-arrow {
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  width: 54px;
+  height: 76px;
+  border-radius: 20px;
+  border: 1px solid rgba(212,175,55,.45);
+  background: rgba(0,0,0,.72);
+  color: #d4af37;
+  font-size: 46px;
+  cursor: pointer;
+  z-index: 30;
+  transition: .3s ease;
+}
+
+.gallery-arrow:hover {
+  background: #d4af37;
+  color: #000;
+}
+
+.gallery-left {
+  left: -20px;
+}
+
+.gallery-right {
+  right: -20px;
+}
+
+.gallery-grid.dragging {
+  cursor: grabbing;
+  scroll-behavior: auto;
+}
+
+.gallery-grid {
+  cursor: grab;
+}

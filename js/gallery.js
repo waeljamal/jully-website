@@ -99,3 +99,56 @@ document.addEventListener("DOMContentLoaded", () => {
     if (e.key === "ArrowLeft") prevItem();
   });
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const galleryGrid = document.querySelector(".gallery-grid");
+  if (!galleryGrid) return;
+
+  const leftArrow = document.createElement("button");
+  const rightArrow = document.createElement("button");
+
+  leftArrow.className = "gallery-arrow gallery-left";
+  rightArrow.className = "gallery-arrow gallery-right";
+
+  leftArrow.innerHTML = "‹";
+  rightArrow.innerHTML = "›";
+
+  galleryGrid.parentElement.appendChild(leftArrow);
+  galleryGrid.parentElement.appendChild(rightArrow);
+
+  leftArrow.addEventListener("click", () => {
+    galleryGrid.scrollBy({ left: -360, behavior: "smooth" });
+  });
+
+  rightArrow.addEventListener("click", () => {
+    galleryGrid.scrollBy({ left: 360, behavior: "smooth" });
+  });
+
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+
+  galleryGrid.addEventListener("mousedown", (e) => {
+    isDown = true;
+    galleryGrid.classList.add("dragging");
+    startX = e.pageX - galleryGrid.offsetLeft;
+    scrollLeft = galleryGrid.scrollLeft;
+  });
+
+  galleryGrid.addEventListener("mouseleave", () => {
+    isDown = false;
+    galleryGrid.classList.remove("dragging");
+  });
+
+  galleryGrid.addEventListener("mouseup", () => {
+    isDown = false;
+    galleryGrid.classList.remove("dragging");
+  });
+
+  galleryGrid.addEventListener("mousemove", (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - galleryGrid.offsetLeft;
+    const walk = (x - startX) * 1.7;
+    galleryGrid.scrollLeft = scrollLeft - walk;
+  });
+});

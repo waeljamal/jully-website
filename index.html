@@ -23,22 +23,14 @@
 
 <body>
 
-  <!-- PRELOADER -->
   <div id="preloader">
     <div class="loader-logo">Jully</div>
     <div class="loader-line"></div>
   </div>
 
-  <!-- FLOATING BUTTONS -->
-  <a class="float-whatsapp" href="https://wa.me/905396637406" target="_blank" aria-label="WhatsApp">
-    WhatsApp
-  </a>
+  <a class="float-whatsapp" href="https://wa.me/905396637406" target="_blank" aria-label="WhatsApp">WhatsApp</a>
+  <a class="float-book" href="#booking">Randevu Al</a>
 
-  <a class="float-book" href="#booking">
-    Randevu Al
-  </a>
-
-  <!-- HEADER -->
   <header id="header">
     <nav class="navbar">
       <a href="#home" class="brand">
@@ -62,44 +54,35 @@
     </nav>
   </header>
 
-  <!-- HOME / PREMIUM HERO -->
-<section id="home" class="hero premium-hero">
+  <section id="home" class="hero premium-hero">
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="videos/hero.mp4" type="video/mp4" />
+    </video>
 
-  <video class="hero-video" autoplay muted loop playsinline>
-    <source src="videos/hero.mp4" type="video/mp4" />
-  </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-gold-light"></div>
 
-  <div class="hero-overlay"></div>
-  <div class="hero-gold-light"></div>
+    <div class="hero-content premium-hero-content">
+      <p class="eyebrow" data-key="heroEyebrow">Ankara’da Premium Afrika Örgü</p>
+      <h1 data-key="heroTitle">Jully Afrika Style</h1>
+      <h2 data-key="heroSubtitle">Luxury African Braiding Studio</h2>
+      <p class="hero-text" data-key="heroText">Ankara • Since 2012 • 14+ Years Experience</p>
 
-  <div class="hero-content premium-hero-content">
-    <p class="eyebrow" data-key="heroEyebrow">Ankara’da Premium Afrika Örgü</p>
-
-    <h1 data-key="heroTitle">Jully Afrika Style</h1>
-
-    <h2 data-key="heroSubtitle">Luxury African Braiding Studio</h2>
-
-    <p class="hero-text" data-key="heroText">
-      Ankara • Since 2012 • 14+ Years Experience
-    </p>
-
-    <div class="hero-buttons">
-      <a href="#booking" class="btn btn-gold" data-key="heroButton">Randevu Al</a>
-      <a href="#gallery" class="btn btn-outline" data-key="galleryButton">Galeriyi Gör</a>
+      <div class="hero-buttons">
+        <a href="#booking" class="btn btn-gold" data-key="heroButton">Randevu Al</a>
+        <a href="#gallery" class="btn btn-outline" data-key="galleryButton">Galeriyi Gör</a>
+      </div>
     </div>
-  </div>
 
-  <div class="hero-bottom-info">
-    <span>Certified Braider</span>
-    <span>Luxury Braids</span>
-    <span>Ankara / Çankaya</span>
-  </div>
+    <div class="hero-bottom-info">
+      <span>Certified Braider</span>
+      <span>Luxury Braids</span>
+      <span>Ankara / Çankaya</span>
+    </div>
 
-  <div class="scroll-indicator"></div>
+    <div class="scroll-indicator"></div>
+  </section>
 
-</section>
-
-  <!-- ABOUT -->
   <section id="about" class="section about-section">
     <div class="container">
       <div class="section-heading">
@@ -134,7 +117,6 @@
     </div>
   </section>
 
-  <!-- GALLERY -->
   <section id="gallery" class="section gallery-section">
     <div class="container">
       <div class="section-heading">
@@ -142,13 +124,10 @@
         <h2 data-key="galleryTitle">Galeri</h2>
       </div>
 
-      <div class="gallery-grid">
-        <!-- gallery.js will fill this -->
-      </div>
+      <div class="gallery-grid"></div>
     </div>
   </section>
 
-  <!-- SERVICES -->
   <section id="services" class="section services-section">
     <div class="container">
       <div class="section-heading">
@@ -159,6 +138,7 @@
       <div class="service-container">
 
         <div class="service-card">
+          <div class="service-icon"><i class="fas fa-star"></i></div>
           <h3>Kornrows Koleksiyonu</h3>
           <ul>
             <li><span>İki Kornrows</span><strong>3.500 TL</strong></li>
@@ -169,6 +149,7 @@
         </div>
 
         <div class="service-card">
+          <div class="service-icon"><i class="fas fa-crown"></i></div>
           <h3>Klasik Afrika Örgü</h3>
           <ul>
             <li><span>Göğüs Üstü</span><strong>4.500 TL</strong></li>
@@ -179,6 +160,7 @@
         </div>
 
         <div class="service-card">
+          <div class="service-icon"><i class="fas fa-spa"></i></div>
           <h3>Afro Örgü</h3>
           <ul>
             <li><span>Göğüs Üstü</span><strong>4.500 TL</strong></li>
@@ -189,6 +171,7 @@
         </div>
 
         <div class="service-card">
+          <div class="service-icon"><i class="fas fa-gem"></i></div>
           <h3>Mini Box Braids</h3>
           <ul>
             <li><span>Göğüs Üstü</span><strong>7.000 TL</strong></li>
@@ -201,7 +184,6 @@
     </div>
   </section>
 
-  <!-- BOOKING -->
   <section id="booking" class="section booking-section">
     <div class="container">
       <div class="section-heading">
@@ -215,13 +197,8 @@
         <input type="tel" name="phone" placeholder="Telefon" required />
         <input type="email" name="email" placeholder="E-posta" />
 
-        <select name="service" required>
-          <option value="">Hizmet Seçiniz</option>
-        </select>
-
-        <select name="length" required>
-          <option value="">Uzunluk Seçiniz</option>
-        </select>
+        <select name="service" required><option value="">Hizmet Seçiniz</option></select>
+        <select name="length" required><option value="">Uzunluk Seçiniz</option></select>
 
         <input type="date" name="date" required />
         <input type="time" name="time" required />
@@ -248,7 +225,6 @@
     </div>
   </section>
 
-  <!-- REVIEWS -->
   <section id="reviews" class="section reviews-section">
     <div class="container">
       <div class="section-heading">
@@ -262,7 +238,6 @@
     </div>
   </section>
 
-  <!-- MAP -->
   <section id="map" class="map-section">
     <iframe
       title="Afro Hair Ankara Location"
@@ -271,16 +246,13 @@
     </iframe>
   </section>
 
-  <!-- FOOTER -->
   <footer id="contact">
     <div class="footer-grid">
       <div>
         <h3>İletişim</h3>
         <p>+90 539 663 74 06</p>
         <p>Korkutreis, Necatibey Cd. No:15 D:16<br />06420 Çankaya / Ankara</p>
-        <p>
-          <a href="https://www.instagram.com/jullyafrikastile" target="_blank">Instagram</a>
-        </p>
+        <p><a href="https://www.instagram.com/jullyafrikastile" target="_blank">Instagram</a></p>
       </div>
 
       <div class="footer-center">
@@ -297,8 +269,8 @@
   </footer>
 
   <script src="js/gallery.js"></script>
-<script src="js/language.js"></script>
-<script src="js/booking.js"></script>
-<script src="js/script.js"></script>
+  <script src="js/language.js"></script>
+  <script src="js/booking.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

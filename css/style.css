@@ -1035,3 +1035,96 @@ width:130px;
     transform:rotate(12deg) scale(1.08);
     box-shadow:0 0 45px rgba(212,175,55,.6);
 }
+/* NETFLIX / LUXURY GALLERY */
+
+.gallery-section {
+  background:
+    radial-gradient(circle at top, rgba(212,175,55,.10), transparent 35%),
+    #050505;
+}
+
+.gallery-grid {
+  display: flex;
+  gap: 22px;
+  overflow-x: auto;
+  padding: 30px 5px 45px;
+  scroll-snap-type: x mandatory;
+}
+
+.gallery-grid::-webkit-scrollbar {
+  height: 8px;
+}
+
+.gallery-grid::-webkit-scrollbar-track {
+  background: #111;
+}
+
+.gallery-grid::-webkit-scrollbar-thumb {
+  background: #d4af37;
+  border-radius: 20px;
+}
+
+.gallery-item {
+  min-width: 310px;
+  height: 430px;
+  scroll-snap-align: start;
+  border-radius: 28px;
+  overflow: hidden;
+  position: relative;
+  transform: scale(.96);
+  transition: .45s ease;
+}
+
+.gallery-item:nth-child(2n) {
+  height: 500px;
+}
+
+.gallery-item:nth-child(3n) {
+  min-width: 380px;
+}
+
+.gallery-item:hover {
+  transform: scale(1.04);
+  z-index: 5;
+}
+
+.gallery-item::after {
+  content: "Jully Afrika Style";
+  position: absolute;
+  left: 22px;
+  bottom: 22px;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 1px;
+  z-index: 3;
+  text-shadow: 0 4px 18px #000;
+}
+
+.gallery-item img,
+.gallery-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-hover {
+  background:
+    linear-gradient(to top, rgba(0,0,0,.85), transparent 55%);
+}
+
+.lightbox-content img,
+.lightbox-content video {
+  animation: galleryZoom .35s ease;
+}
+
+@keyframes galleryZoom {
+  from {
+    opacity: 0;
+    transform: scale(.92);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

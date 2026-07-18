@@ -155,7 +155,7 @@
     <div class="loader-line"></div>
   </div>
 
-  <!-- Floating Buttons -->
+  <!-- Floating WhatsApp Button -->
   <a
     class="float-whatsapp"
     href="https://wa.me/905396637406"
@@ -166,6 +166,7 @@
     WhatsApp
   </a>
 
+  <!-- Floating Booking Button -->
   <a
     class="float-book"
     href="#booking"
@@ -193,35 +194,49 @@
         class="nav-menu"
       >
         <li>
-          <a href="#home" data-key="navHome">Ana Sayfa</a>
+          <a href="#home" data-key="navHome">
+            Ana Sayfa
+          </a>
         </li>
 
         <li>
-          <a href="#about" data-key="navAbout">Hakkımızda</a>
+          <a href="#about" data-key="navAbout">
+            Hakkımızda
+          </a>
         </li>
 
         <li>
-          <a href="#gallery" data-key="navGallery">Galeri</a>
+          <a href="#gallery" data-key="navGallery">
+            Galeri
+          </a>
         </li>
 
         <li>
-          <a href="#services" data-key="navServices">Hizmetler</a>
+          <a href="#services" data-key="navServices">
+            Hizmetler
+          </a>
         </li>
 
         <li>
-          <a href="#booking" data-key="navBooking">Randevu Al</a>
+          <a href="#booking" data-key="navBooking">
+            Randevu Al
+          </a>
         </li>
 
         <li>
-          <a href="#contact" data-key="navContact">İletişim</a>
+          <a href="#contact" data-key="navContact">
+            İletişim
+          </a>
         </li>
       </ul>
 
       <div class="nav-actions">
+
         <button
           id="tr-btn"
           class="lang-btn active"
           type="button"
+          aria-label="Türkçe dilini seç"
         >
           TR
         </button>
@@ -230,6 +245,7 @@
           id="en-btn"
           class="lang-btn"
           type="button"
+          aria-label="İngilizce dilini seç"
         >
           EN
         </button>
@@ -241,12 +257,13 @@
         >
           ☰
         </button>
+
       </div>
 
     </nav>
   </header>
 
-  <!-- Hero -->
+  <!-- Hero Section -->
   <section
     id="home"
     class="hero premium-hero"
@@ -258,6 +275,7 @@
       muted
       loop
       playsinline
+      preload="metadata"
     >
       <source
         src="videos/hero.mp4"
@@ -323,7 +341,7 @@
 
   </section>
 
-  <!-- About -->
+  <!-- About Section -->
   <section
     id="about"
     class="section about-section"
@@ -331,15 +349,22 @@
     <div class="container">
 
       <div class="section-heading">
-        <span data-key="aboutSmall">Hikayemiz</span>
-        <h2 data-key="aboutTitle">Hakkımızda</h2>
+        <span data-key="aboutSmall">
+          Hikayemiz
+        </span>
+
+        <h2 data-key="aboutTitle">
+          Hakkımızda
+        </h2>
       </div>
 
       <div class="about-grid">
 
         <div class="about-card">
 
-          <h3>Jully Afrika Style</h3>
+          <h3>
+            Jully Afrika Style
+          </h3>
 
           <p data-key="aboutText">
             Togo’lu profesyonel kadın saç örgü uzmanı Jully,
@@ -355,17 +380,23 @@
 
           <div class="stat-box">
             <strong>14+</strong>
-            <span data-key="experience">Yıl Deneyim</span>
+            <span data-key="experience">
+              Yıl Deneyim
+            </span>
           </div>
 
           <div class="stat-box">
             <strong>2012</strong>
-            <span data-key="certified">Sertifikalı</span>
+            <span data-key="certified">
+              Sertifikalı
+            </span>
           </div>
 
           <div class="stat-box">
             <strong>100%</strong>
-            <span data-key="quality">Profesyonel Hizmet</span>
+            <span data-key="quality">
+              Profesyonel Hizmet
+            </span>
           </div>
 
         </div>
@@ -374,7 +405,7 @@
     </div>
   </section>
 
-  <!-- Gallery -->
+  <!-- Gallery Section -->
   <section
     id="gallery"
     class="section gallery-section"
@@ -382,8 +413,15 @@
     <div class="container">
 
       <div class="section-heading">
-        <span data-key="gallerySmall">Çalışmalarımız</span>
-        <h2 data-key="galleryTitle">Galeri</h2>
+
+        <span data-key="gallerySmall">
+          Çalışmalarımız
+        </span>
+
+        <h2 data-key="galleryTitle">
+          Galeri
+        </h2>
+
       </div>
 
       <div class="gallery-grid"></div>
@@ -391,7 +429,7 @@
     </div>
   </section>
 
-  <!-- Services -->
+  <!-- Services Section -->
   <section
     id="services"
     class="section services-section"
@@ -399,21 +437,32 @@
     <div class="container">
 
       <div class="section-heading">
-        <span data-key="servicesSmall">Modeller & Fiyatlar</span>
-        <h2 data-key="servicesTitle">Hizmetler</h2>
+
+        <span data-key="servicesSmall">
+          Modeller & Fiyatlar
+        </span>
+
+        <h2 data-key="servicesTitle">
+          Hizmetler
+        </h2>
+
       </div>
 
       <div class="service-container">
 
+        <!-- Cornrows -->
         <div class="service-card">
 
           <div class="service-icon">
             <i class="fa-solid fa-star"></i>
           </div>
 
-          <h3>Kornrows Koleksiyonu</h3>
+          <h3>
+            Kornrows Koleksiyonu
+          </h3>
 
           <ul>
+
             <li>
               <span>İki Kornrows</span>
               <strong>3.500 TL</strong>
@@ -428,6 +477,7 @@
               <span>Full Arkaya Doğru Kornrows</span>
               <strong>5.500 TL</strong>
             </li>
+
           </ul>
 
           <a
@@ -439,15 +489,19 @@
 
         </div>
 
+        <!-- Classic African Braids -->
         <div class="service-card">
 
           <div class="service-icon">
             <i class="fa-solid fa-crown"></i>
           </div>
 
-          <h3>Klasik Afrika Örgü</h3>
+          <h3>
+            Klasik Afrika Örgü
+          </h3>
 
           <ul>
+
             <li>
               <span>Göğüs Üstü</span>
               <strong>4.500 TL</strong>
@@ -462,6 +516,7 @@
               <span>Popo Üstü</span>
               <strong>7.500 TL</strong>
             </li>
+
           </ul>
 
           <a
@@ -473,15 +528,19 @@
 
         </div>
 
+        <!-- Afro Braids -->
         <div class="service-card">
 
           <div class="service-icon">
             <i class="fa-solid fa-spa"></i>
           </div>
 
-          <h3>Afro Örgü</h3>
+          <h3>
+            Afro Örgü
+          </h3>
 
           <ul>
+
             <li>
               <span>Göğüs Üstü</span>
               <strong>4.500 TL</strong>
@@ -496,6 +555,7 @@
               <span>Popo Üstü</span>
               <strong>7.500 TL</strong>
             </li>
+
           </ul>
 
           <a
@@ -507,15 +567,19 @@
 
         </div>
 
+        <!-- Mini Box Braids -->
         <div class="service-card">
 
           <div class="service-icon">
             <i class="fa-solid fa-gem"></i>
           </div>
 
-          <h3>Mini Box Braids</h3>
+          <h3>
+            Mini Box Braids
+          </h3>
 
           <ul>
+
             <li>
               <span>Göğüs Üstü</span>
               <strong>7.000 TL</strong>
@@ -525,6 +589,7 @@
               <span>Bel Hizası</span>
               <strong>8.000 TL</strong>
             </li>
+
           </ul>
 
           <a
@@ -538,9 +603,7 @@
 
       </div>
     </div>
-  </section>
-
-  <!-- Booking -->
+  </section>  <!-- Booking Section -->
   <section
     id="booking"
     class="section booking-section"
@@ -548,8 +611,15 @@
     <div class="container">
 
       <div class="section-heading">
-        <span data-key="bookingSmall">Online Randevu</span>
-        <h2 data-key="bookingTitle">Randevu Al</h2>
+
+        <span data-key="bookingSmall">
+          Online Randevu
+        </span>
+
+        <h2 data-key="bookingTitle">
+          Randevu Al
+        </h2>
+
       </div>
 
       <form id="bookingForm">
@@ -559,6 +629,7 @@
           name="name"
           placeholder="Ad"
           autocomplete="given-name"
+          aria-label="Ad"
           required
         />
 
@@ -567,6 +638,7 @@
           name="surname"
           placeholder="Soyad"
           autocomplete="family-name"
+          aria-label="Soyad"
           required
         />
 
@@ -575,6 +647,7 @@
           name="phone"
           placeholder="Telefon"
           autocomplete="tel"
+          aria-label="Telefon"
           required
         />
 
@@ -583,42 +656,54 @@
           name="email"
           placeholder="E-posta"
           autocomplete="email"
+          aria-label="E-posta"
         />
 
         <select
           name="service"
+          aria-label="Hizmet seçiniz"
           required
         >
-          <option value="">Hizmet Seçiniz</option>
+          <option value="">
+            Hizmet Seçiniz
+          </option>
         </select>
 
         <select
           name="length"
+          aria-label="Uzunluk seçiniz"
           required
         >
-          <option value="">Uzunluk Seçiniz</option>
+          <option value="">
+            Uzunluk Seçiniz
+          </option>
         </select>
 
         <input
           type="date"
           name="date"
+          aria-label="Randevu tarihi"
           required
         />
 
         <input
           type="time"
           name="time"
+          aria-label="Randevu saati"
           required
         />
 
         <textarea
           name="note"
           placeholder="Not"
+          aria-label="Randevu notu"
         ></textarea>
 
         <div class="payment">
 
-          <h3>Ödeme Bilgileri</h3>
+          <h3>
+            Ödeme Bilgileri
+          </h3>
 
           <p>
             Sadece IBAN ile ödeme kabul edilmektedir.
@@ -642,6 +727,7 @@
 
             <input
               type="checkbox"
+              name="paymentConfirmation"
               required
             />
 
@@ -662,7 +748,7 @@
     </div>
   </section>
 
-  <!-- Reviews -->
+  <!-- Reviews Section -->
   <section
     id="reviews"
     class="section reviews-section"
@@ -670,15 +756,25 @@
     <div class="container">
 
       <div class="section-heading">
-        <span>Google</span>
-        <h2>Müşteri Yorumları</h2>
+
+        <span>
+          Google
+        </span>
+
+        <h2>
+          Müşteri Yorumları
+        </h2>
+
       </div>
 
       <div class="reviews-slider">
 
         <div class="review-card active">
 
-          <div class="stars">
+          <div
+            class="stars"
+            aria-label="5 yıldız"
+          >
             ★★★★★
           </div>
 
@@ -687,13 +783,18 @@
             Saç örgülerim harika oldu.
           </p>
 
-          <h4>Google Review</h4>
+          <h4>
+            Google Review
+          </h4>
 
         </div>
 
         <div class="review-card">
 
-          <div class="stars">
+          <div
+            class="stars"
+            aria-label="5 yıldız"
+          >
             ★★★★★
           </div>
 
@@ -702,13 +803,18 @@
             tavsiye ederim. Çok memnun kaldım.
           </p>
 
-          <h4>Google Review</h4>
+          <h4>
+            Google Review
+          </h4>
 
         </div>
 
         <div class="review-card">
 
-          <div class="stars">
+          <div
+            class="stars"
+            aria-label="5 yıldız"
+          >
             ★★★★★
           </div>
 
@@ -717,7 +823,9 @@
             Sonuç tam istediğim gibi oldu.
           </p>
 
-          <h4>Google Review</h4>
+          <h4>
+            Google Review
+          </h4>
 
         </div>
 
@@ -744,7 +852,10 @@
 
       <div class="instagram-card">
 
-        <div class="instagram-icon">
+        <div
+          class="instagram-icon"
+          aria-hidden="true"
+        >
           <i class="fa-brands fa-instagram"></i>
         </div>
 
@@ -767,17 +878,29 @@
           <div class="instagram-features">
 
             <span>
-              <i class="fa-solid fa-circle-check"></i>
+              <i
+                class="fa-solid fa-circle-check"
+                aria-hidden="true"
+              ></i>
+
               Yeni Saç Modelleri
             </span>
 
             <span>
-              <i class="fa-solid fa-circle-check"></i>
+              <i
+                class="fa-solid fa-circle-check"
+                aria-hidden="true"
+              ></i>
+
               Öncesi ve Sonrası
             </span>
 
             <span>
-              <i class="fa-solid fa-circle-check"></i>
+              <i
+                class="fa-solid fa-circle-check"
+                aria-hidden="true"
+              ></i>
+
               Reels ve Videolar
             </span>
 
@@ -790,7 +913,11 @@
             rel="noopener noreferrer"
             aria-label="Jully Afrika Style Instagram hesabını aç"
           >
-            <i class="fa-brands fa-instagram"></i>
+            <i
+              class="fa-brands fa-instagram"
+              aria-hidden="true"
+            ></i>
+
             Instagram'da Takip Et
           </a>
 
@@ -800,13 +927,13 @@
     </div>
   </section>
 
-  <!-- Map -->
+  <!-- Map Section -->
   <section
     id="map"
     class="map-section"
   >
     <iframe
-      title="Afro Hair Ankara Location"
+      title="Jully Afrika Style Ankara konumu"
       src="https://www.google.com/maps?q=Korkutreis,%20Necatibey%20Cd.%20No:15%20D:16,%2006420%20%C3%87ankaya%2FAnkara&output=embed"
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"
@@ -821,7 +948,9 @@
 
       <div>
 
-        <h3>İletişim</h3>
+        <h3>
+          İletişim
+        </h3>
 
         <p>
           <a href="tel:+905396637406">
@@ -841,8 +970,13 @@
             target="_blank"
             rel="noopener noreferrer"
             class="footer-instagram-link"
+            aria-label="Instagram hesabımızı ziyaret edin"
           >
-            <i class="fa-brands fa-instagram"></i>
+            <i
+              class="fa-brands fa-instagram"
+              aria-hidden="true"
+            ></i>
+
             @jullyafrikastile
           </a>
         </p>
@@ -863,7 +997,9 @@
 
       <div>
 
-        <h3>Çalışma Saatleri</h3>
+        <h3>
+          Çalışma Saatleri
+        </h3>
 
         <p>
           Pazartesi - Pazar
